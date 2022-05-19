@@ -18,6 +18,8 @@ jobs:
         with:
             args: >
               -Dsonar.exclusions=build.gradle
+              -Dsonar.sources=spambase/
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
